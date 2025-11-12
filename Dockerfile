@@ -17,4 +17,4 @@ FROM gcr.io/distroless/static-debian12
 
 COPY --from=builder /build/bin/example-app /
 
-ENTRYPOINT ["/example-app"]
+ENTRYPOINT ["/example-app", "serve"]
